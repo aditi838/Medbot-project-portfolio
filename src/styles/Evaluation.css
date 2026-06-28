@@ -1,0 +1,465 @@
+.evaluation{
+    width:100%;
+    padding:100px 8%;
+    background:#050816;
+    color:white;
+    position:relative;
+    overflow:hidden;
+}
+
+/* ====================================== */
+
+.evaluation::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:#4F8EF7;
+    filter:blur(180px);
+    opacity:.05;
+    top:-180px;
+    left:-180px;
+    pointer-events:none;
+}
+
+/* ====================================== */
+
+.evaluation-header{
+    max-width:760px;
+    margin:0 auto 70px;
+    text-align:center;
+}
+
+.evaluation-header h2{
+    font-size:clamp(2rem,4vw,3.2rem);
+    margin-bottom:16px;
+    font-weight:700;
+}
+
+.evaluation-header p{
+    color:#9AA9C2;
+    line-height:1.8;
+    font-size:1rem;
+}
+
+/* ====================================== */
+
+.metrics-grid{
+
+    max-width:1000px;
+
+    margin:0 auto 70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:22px;
+}
+
+/* ====================================== */
+
+.metric-card{
+
+    background:linear-gradient(
+        180deg,
+        rgba(255,255,255,.05),
+        rgba(255,255,255,.025)
+    );
+
+    border:1px solid rgba(255,255,255,.10);
+
+    border-radius:18px;
+
+    padding:26px;
+
+    backdrop-filter:blur(14px);
+
+    transition:
+        transform .25s,
+        border-color .25s,
+        box-shadow .25s;
+}
+
+.metric-card:hover{
+
+    transform:
+        translateY(-6px)
+        scale(1.02);
+
+    border-color:#4F8EF7;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.35),
+        0 0 30px rgba(79,142,247,.18);
+}
+
+.metric-card h3{
+
+    margin:0;
+
+    font-size:2.3rem;
+
+    color:#4F8EF7;
+}
+
+.metric-card h4{
+
+    margin:14px 0 10px;
+
+    font-size:1rem;
+
+    font-weight:600;
+}
+
+.metric-card p{
+
+    color:#B5C2D8;
+
+    line-height:1.7;
+
+    font-size:.92rem;
+}
+
+/* ====================================== */
+/* Evaluation Pipeline */
+/* ====================================== */
+
+.evaluation-pipeline{
+
+    max-width:760px;
+
+    margin:0 auto 80px;
+
+    text-align:center;
+}
+
+.evaluation-pipeline h3{
+
+    font-size:1.6rem;
+
+    margin-bottom:36px;
+
+    font-weight:600;
+}
+
+.pipeline{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+}
+
+.pipe-box{
+
+    width:100%;
+
+    max-width:360px;
+
+    padding:18px 24px;
+
+    border-radius:16px;
+
+    background:linear-gradient(
+        180deg,
+        rgba(255,255,255,.05),
+        rgba(255,255,255,.025)
+    );
+
+    border:1px solid rgba(255,255,255,.10);
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    transition:
+        transform .25s,
+        border-color .25s,
+        box-shadow .25s;
+}
+
+.pipe-box:hover{
+
+    transform:translateY(-4px);
+
+    border-color:#4F8EF7;
+
+    box-shadow:
+        0 10px 24px rgba(0,0,0,.28),
+        0 0 22px rgba(79,142,247,.16);
+}
+
+.pipe-icon{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:12px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(79,142,247,.12);
+
+    border:1px solid rgba(79,142,247,.25);
+
+    font-size:1.3rem;
+
+    flex-shrink:0;
+}
+
+.pipe-box span{
+
+    font-weight:500;
+
+    color:#E2E8F0;
+}
+
+.pipe-arrow{
+
+    font-size:1.6rem;
+
+    color:#4F8EF7;
+
+    margin:14px 0;
+}
+
+/* ====================================== */
+/* Results */
+/* ====================================== */
+
+.results-grid{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:12px;
+
+    margin-top:12px;
+}
+
+.result-chip{
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:rgba(79,142,247,.10);
+
+    border:1px solid rgba(79,142,247,.25);
+
+    color:#AFCBFF;
+
+    font-size:.88rem;
+
+    font-weight:500;
+
+    transition:.25s;
+}
+
+.result-chip:hover{
+
+    background:rgba(79,142,247,.18);
+
+    border-color:#4F8EF7;
+
+    transform:translateY(-2px);
+}
+
+/* ====================================== */
+/* Findings */
+/* ====================================== */
+
+.findings{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    text-align:center;
+}
+
+.findings h3{
+
+    font-size:1.8rem;
+
+    margin-bottom:36px;
+
+    font-weight:600;
+}
+
+.findings-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:22px;
+}
+
+.finding-card{
+
+    background:linear-gradient(
+        180deg,
+        rgba(255,255,255,.05),
+        rgba(255,255,255,.025)
+    );
+
+    border:1px solid rgba(255,255,255,.10);
+
+    border-radius:18px;
+
+    padding:28px;
+
+    transition:
+        transform .25s,
+        border-color .25s,
+        box-shadow .25s;
+}
+
+.finding-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#4F8EF7;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.35),
+        0 0 28px rgba(79,142,247,.16);
+}
+
+.finding-card span{
+
+    display:block;
+
+    font-size:2rem;
+
+    margin-bottom:18px;
+}
+
+.finding-card p{
+
+    color:#B5C2D8;
+
+    line-height:1.75;
+
+    font-size:.94rem;
+}
+
+/* ====================================== */
+/* Responsive */
+/* ====================================== */
+
+@media(max-width:900px){
+
+    .evaluation{
+
+        padding:80px 6%;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .evaluation{
+
+        padding:70px 20px;
+    }
+
+    .evaluation-header{
+
+        margin-bottom:50px;
+    }
+
+    .metric-card{
+
+        padding:22px;
+    }
+
+    .metric-card h3{
+
+        font-size:2rem;
+    }
+
+    .pipe-box{
+
+        padding:16px 18px;
+    }
+
+    .pipe-icon{
+
+        width:42px;
+        height:42px;
+
+        font-size:1.1rem;
+    }
+
+    .findings h3{
+
+        font-size:1.5rem;
+    }
+
+}
+
+@media(max-width:420px){
+
+    .evaluation{
+
+        padding:60px 16px;
+    }
+
+    .metric-card{
+
+        padding:20px;
+    }
+
+    .finding-card{
+
+        padding:22px;
+    }
+
+    .pipe-box{
+
+        gap:12px;
+    }
+
+}
+/* metric-icon for new card layout */
+.metric-icon {
+  font-size: 1.8rem;
+  margin-bottom: 14px;
+}
+
+.metric-card h3 {
+  font-size: 1.3rem;
+  color: white;
+  margin-bottom: 6px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.metric-card h4 {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #4F8EF7;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.metric-card p {
+  font-size: 0.88rem;
+  color: #94a3b8;
+  line-height: 1.75;
+  margin: 0;
+}
