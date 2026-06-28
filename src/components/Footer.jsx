@@ -19,7 +19,7 @@ export default function Footer() {
           </a>
           <span className="footer-dot">·</span>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/aditisharma248/"
             target="_blank"
             rel="noreferrer"
           >
