@@ -67,11 +67,20 @@ export default function Hero() {
         <div className="hero-buttons">
 
           <button className="primary-btn">
-            Explore Architecture
+            <a
+            href="https://github.com/aditi838/MedBot"
+            target="_blank"
+            rel="noreferrer"
+          >Explore Architecture</a>  
+            
           </button>
 
           <button className="secondary-btn">
-            View GitHub
+            <a
+            href="https://github.com/aditi838/MedBot"
+            target="_blank"
+            rel="noreferrer"
+          >View GitHub</a>
           </button>
 
         </div>
